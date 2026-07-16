@@ -1,4 +1,0 @@
-kubectl create deploy default-app \
---image=busybox \
---command -- sh -c "while true; do echo hello; sleep 3600; done" \
--n ingress-demo

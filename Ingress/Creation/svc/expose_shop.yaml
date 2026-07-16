@@ -1,5 +1,0 @@
-kubectl expose deploy shop \
---port=80 \
---target-port=80 \
---name=shop-svc \
--n ingress-demo
