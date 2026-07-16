@@ -1,0 +1,3 @@
+kubectl create deploy shop \
+--image=nginx \
+-n ingress-demo

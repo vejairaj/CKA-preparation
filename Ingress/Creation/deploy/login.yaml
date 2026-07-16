@@ -1,0 +1,3 @@
+kubectl create deploy login \
+--image=httpd \
+-n ingress-demo

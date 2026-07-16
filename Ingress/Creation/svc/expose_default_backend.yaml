@@ -1,0 +1,5 @@
+kubectl expose deploy default-app \
+--port=80 \
+--target-port=80 \
+--name=default-svc \
+-n ingress-demo

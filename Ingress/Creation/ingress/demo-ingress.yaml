@@ -1,0 +1,35 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: demo-ingress
+  namespace: ingress-demo
+
+spec:
+  ingressClassName: nginx
+
+  defaultBackend:
+    service:
+      name: default-svc
+      port:
+        number: 80
+
+  rules:
+
+  - http:
+      paths:
+
+      - path: /shop
+        pathType: Prefix
+        backend:
+          service:
+            name: shop-svc
+            port:
+              number: 80
+
+      - path: /login
+        pathType: Exact
+        backend:
+          service:
+            name: login-svc
+            port:
+              number: 80

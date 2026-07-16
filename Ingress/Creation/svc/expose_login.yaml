@@ -1,0 +1,5 @@
+kubectl expose deploy login \
+--port=80 \
+--target-port=80 \
+--name=login-svc \
+-n ingress-demo
