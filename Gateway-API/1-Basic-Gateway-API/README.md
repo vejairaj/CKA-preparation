@@ -18,3 +18,15 @@ Requirements:
     * route / traffic to web-svc on port 80.
 
 
+
+verify the below:
+
+kubectl get gatewayclass
+
+kubectl get gateway -n gateway-demo
+
+kubectl get httproute -n gateway-demo
+
+kubectl describe gateway -n gateway-demo web-gateway
+
+kubectl describe httproute -n gateway-demo web-route
