@@ -28,7 +28,7 @@ jobs:
       - name: Applying Gateway API YAML's
         run: |
           currentdate=$(date +"%d%m%Y") && echo $currentdate &&
-          cat /Users/vejairaj/CKA-learning/CKA-preparation/Gateway-API/1-Basic-Gateway-API/. > applied.yaml
+          cat Gateway-API/1-Basic-Gateway-API/*.yaml > applied.yaml
           echo "The Above files are apllied for the pipeline" >>applied.yaml
          
     
