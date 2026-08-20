@@ -34,5 +34,5 @@ jobs:
         run: |
           kubectl apply -f /Users/vejairaj/CKA-learning/CKA-preparation/Gateway-API/1-Basic-Gateway-API/.
           currentdate=$(date +"%d%m%Y") && echo $currentdate
-          kubectl get all > /Users/vejairaj/CKA-learning/CKA-preparation/Gateway-API/1-Basic-Gateway-API/output/$currentdate.log
+          
           echo "Deployment complete" 
